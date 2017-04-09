@@ -9,7 +9,6 @@ p, h1 {
 
 }
 
-
 .parallax {
   perspective: 1px;
   height: 100vh;
@@ -32,6 +31,10 @@ p, h1 {
   z-index: 0;
 }
 
+.parallax__layer--overlay {
+  z-index: 1;
+}
+
 .parallax__layer--back {
   transform: translateZ(-1px) scale(2);
   z-index: -2;
@@ -40,7 +43,6 @@ p, h1 {
 .parallax__layer--back2 {
   transform: translateZ(-2px) scale(3);
   z-index: -1;
-
 }
 
 .parallax__layer--back3 {
@@ -61,7 +63,7 @@ p, h1 {
   background-color: black;
   padding-top: 10vh;
   padding-bottom: 100vh;
-  z-index: 5;
+  z-index: 6;
   position: relative;
-  margin-top: 97vh;
+  margin-top: 96vh;
 }
